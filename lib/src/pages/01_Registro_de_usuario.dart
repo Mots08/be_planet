@@ -19,6 +19,8 @@ class _RegistroUsuarioState extends State<RegistroUsuario> {
           centerTitle: true,
         ),
         body:_datosRegistro(),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButton: botonRegistro(context),
 
     );
   }
@@ -42,14 +44,20 @@ Widget _datosRegistro(){
         Divider(),
        TextFormField( decoration: InputDecoration(labelText: 'Contraseña', icon: Icon(Icons.security)),obscureText: true),
         Divider(height: 20.0),
-       FloatingActionButton(heroTag: "registroCompleto", child: Icon(Icons.arrow_forward, size: 55,), backgroundColor: Colors.green, onPressed: () {}), 
-        Divider(height: 20.0),
        RaisedButton(child: Icon(Icons.alternate_email, size: 55,),color: Colors.redAccent,onPressed: (){})]
            )
          )
        )
      ]
   );
+}
+
+Widget botonRegistro(context){
+  return FloatingActionButton (heroTag: "registroCompleto", child: Icon(Icons.arrow_forward, size: 55,), backgroundColor: Colors.green, onPressed: () {
+    //Registrar y seguir a "PREGUNTAS HUELLAS DE CARBÓN"
+    //Reemplazar el MyApp por la pagina correspondiente 
+    Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp()));
+  });
 }
 
 

@@ -1,4 +1,4 @@
-import 'package:be_planet/src/pages/home.dart';
+import 'package:be_planet/src/pages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: new SplashScreenDemo(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -32,7 +33,7 @@ class _SplashScreenDemoState extends State<SplashScreenDemo> {
       ),
       photoSize: 120.0,
       loaderColor: Colors.green,
-      navigateAfterSeconds: new HomePage(),
+      navigateAfterSeconds: new Login(),
     );
   }
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'sign_up.dart';
+
 class Login extends StatefulWidget {
 
   @override
@@ -8,8 +10,6 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   GlobalKey<FormState> _key = GlobalKey();
-  String _correo;
-  String _contrasenia;
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +18,12 @@ class _LoginState extends State<Login> {
         title: Text("Login"),
         backgroundColor: Colors.green,
       ),
-      body: _loginForm()
+      body: _loginForm(context)
     );
   }
 }
 
-Widget _loginForm(){
+Widget _loginForm(context){
   
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,
@@ -42,7 +42,6 @@ Widget _loginForm(){
                   labelText: "Correo",
                   icon: Icon(Icons.email)
                 ),
-                //onSaved: (text) => _correo = text,
               ),
               TextFormField(
                 textAlign: TextAlign.left,
@@ -50,7 +49,6 @@ Widget _loginForm(){
                   labelText: "Contrseña",
                   icon: Icon(Icons.vpn_key)
                 ),
-                //onSaved: (text) => _correo = text,
               ),
               Divider(),
               RaisedButton(
@@ -78,7 +76,9 @@ Widget _loginForm(){
               RaisedButton(
                 child: Text("Registrese"),
                 color: Colors.blue,
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => RegistroUsuario()));
+                },
               )
             ],
           )

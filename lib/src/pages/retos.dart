@@ -31,12 +31,9 @@ class _Retos extends State<Retos> {
     
     //We go to have Rows inside of columns to ilustrate each challange in a different column
 
-
     body: listaRetos()
     );
   }
-
-
 
   Widget listaRetos(){
 
@@ -179,7 +176,7 @@ class _Retos extends State<Retos> {
 
   Widget _botonPrimerReto(){
 
-    return FloatingActionButton(child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[100],
+    return FloatingActionButton(heroTag: "ht16",child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[100],
     onPressed: (){setState(() => _retoUno++);
       }
    );
@@ -188,7 +185,7 @@ class _Retos extends State<Retos> {
 
   Widget _botonSegundoReto(){
 
-    return FloatingActionButton(child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[200],
+    return FloatingActionButton(heroTag: "ht15",child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[200],
     onPressed: (){setState(() => _retoDos++);
       }
    );
@@ -196,7 +193,7 @@ class _Retos extends State<Retos> {
 
 Widget _botonTercerReto(){
 
-    return FloatingActionButton(child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[300],
+    return FloatingActionButton(heroTag: "ht14",child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[300],
     onPressed: (){setState(() => _retoTres++);
       }
    );
@@ -204,7 +201,7 @@ Widget _botonTercerReto(){
 
 Widget _botonCuartoReto(){
 
-    return FloatingActionButton(child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[400],
+    return FloatingActionButton(heroTag: "ht13",child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[400],
     onPressed: (){setState(() => _retoCuatro++);
       }
    );
@@ -212,7 +209,7 @@ Widget _botonCuartoReto(){
 
 Widget _botonQuintoReto(){
 
-    return FloatingActionButton(child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[500],
+    return FloatingActionButton(heroTag: "ht12",child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[500],
     onPressed: (){setState(() => _retoCinco++);
       }
    );
@@ -220,7 +217,7 @@ Widget _botonQuintoReto(){
 
 Widget _botonSextoReto(){
 
-    return FloatingActionButton(child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[600],
+    return FloatingActionButton(heroTag: "ht11",child: Icon(Icons.add,color: Colors.white),backgroundColor: Colors.green[600],
     onPressed: (){setState(() => _retoSexto++);
       }
    );

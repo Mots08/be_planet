@@ -97,7 +97,7 @@ void tapProfile(){
   void tapRetos(){
     Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Retos()));
+        MaterialPageRoute(builder: (context) => new Retos()));
   }
 
   void tapPlantapp(){

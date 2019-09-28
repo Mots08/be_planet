@@ -1,4 +1,5 @@
 import 'package:be_planet/src/pages/login.dart';
+import 'package:be_planet/src/pages/questions.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -33,7 +34,7 @@ class _SplashScreenDemoState extends State<SplashScreenDemo> {
       ),
       photoSize: 120.0,
       loaderColor: Colors.green,
-      navigateAfterSeconds: new Login(),
+      navigateAfterSeconds: new Questions(),
     );
   }
 }

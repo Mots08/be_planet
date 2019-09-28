@@ -1,5 +1,4 @@
-
-import 'package:be_planet/src/pages/login.dart';
+import 'package:be_planet/src/pages/questions.dart';
 import 'package:flutter/material.dart';
 
 
@@ -57,7 +56,7 @@ Widget botonRegistro(context){
   return FloatingActionButton (heroTag: "registroCompleto", child: Icon(Icons.arrow_forward, size: 55,), backgroundColor: Colors.green, onPressed: () {
     //Registrar y seguir a "PREGUNTAS HUELLAS DE CARBÓN"
     //Reemplazar el MyApp por la pagina correspondiente 
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Questions()));
   });
 }
 

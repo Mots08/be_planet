@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'sign_up.dart';
+import 'home.dart';
 
 class Login extends StatefulWidget {
 
@@ -53,7 +54,9 @@ Widget _loginForm(context){
               Divider(),
               RaisedButton(
                 color: Colors.green,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                },
                 child: Column(
                   children: <Widget>[
                     Icon(Icons.arrow_forward, color: Colors.white, semanticLabel: "Ingresar",)

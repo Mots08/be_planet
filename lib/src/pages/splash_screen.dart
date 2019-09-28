@@ -34,7 +34,7 @@ class _SplashScreenDemoState extends State<SplashScreenDemo> {
       ),
       photoSize: 120.0,
       loaderColor: Colors.green,
-      navigateAfterSeconds: new Questions(),
+      navigateAfterSeconds: new Login(),
     );
   }
 }

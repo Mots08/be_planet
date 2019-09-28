@@ -1,3 +1,4 @@
+import 'package:be_planet/src/pages/home.dart';
 import 'package:flutter/material.dart';
 
 class FingerPrint extends StatelessWidget {
@@ -6,14 +7,14 @@ class FingerPrint extends StatelessWidget {
   Widget build(BuildContext context) {
      return Scaffold(
       appBar: AppBar(
-        title: Text('Stateful'),
+        title: Text('Huella de Carbono'),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
       body:
           GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
             },
             child: Container(
               child: Image.asset('images/finger.jpeg'),

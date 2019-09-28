@@ -1,5 +1,7 @@
+import 'package:be_planet/src/pages/finger_print.dart';
 import 'package:be_planet/src/pages/profile_page.dart';
 import 'package:be_planet/src/pages/reciclar_page.dart';
+import 'package:be_planet/src/pages/retos.dart';
 import 'package:flutter/material.dart';
 
 
@@ -22,6 +24,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text('BePlanet'),
           centerTitle: true,
+          backgroundColor: Colors.green,
         ),
         body:Center(
             child: Column(
@@ -88,13 +91,13 @@ class _HomePageState extends State<HomePage> {
 void tapProfile(){
   Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => ProfilePage()));
+      MaterialPageRoute(builder: (context) => FingerPrint()));
 }
 
   void tapRetos(){
     Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => ProfilePage()));
+        MaterialPageRoute(builder: (context) => Retos()));
   }
 
   void tapPlantapp(){

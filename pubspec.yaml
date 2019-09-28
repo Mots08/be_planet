@@ -45,6 +45,8 @@ flutter:
   assets:
     - images/BePlanet.png
     - images/finger.jpeg
+    - images/caneca.png
+    - images/Reciclapp.jpeg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
